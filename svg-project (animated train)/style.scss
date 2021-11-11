@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trem-div{
+    width: 80%;
+    height: 80%;
+    
+
+
+}
+
+svg{
+    margin-left: 12%;
+
+}
+.rodinha{
+    animation: rodar 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+.manivela{
+    animation: rodar2 1s linear infinite;
+    transform-box: fill-box;
+
+}
+.manivela2{
+    animation: abrir 1s linear infinite;
+    transform-box: fill-box;
+
+}
+
+#manivela3{
+    animation: rodar3 1s linear infinite;
+
+}
+@keyframes rodar{
+    from{
+        transform: rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+
+@keyframes rodar2{
+    from{
+        transform: rotateZ(0deg) translatey(-7px) rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg) translatey(-7px) rotateZ(-360deg);
+
+    }
+
+}
+
+
+
+@keyframes abrir{
+    from{
+        transform: rotatey(0deg) translatey(12px);
+
+    }
+    to{
+        transform: rotatey(2deg) translatey(12px);
+
+    }
+
+}
+
+.trem-estrutura{
+    animation: tremer 1s ease infinite alternate;
+    -o-transform-origin: top center;
+
+}
+@keyframes tremer{
+    from{
+        transform: rotatey(0deg) rotatex(0deg)
+    }
+    to{
+        transform: rotatey(5deg) rotatex(9deg)
+    } 
+    
+}
+
+@keyframes passando{
+    from{
+        transform: translatex(0px); 
+    }
+    to{
+        transform: translatex(-160px);
+    }
+}
+.trilho{
+    animation: passando 0.8s linear infinite;
+
+}
+.fumaça:nth-child(even){
+    animation: fumaça1 2s linear infinite;
+}
+.fumaça:nth-child(odd){
+    animation: fumaça2 2s linear infinite;
+}
+
+@keyframes fumaça1{
+    from{
+        transform: translate(-2px,-38px) scale(1);
+        opacity: .7;
+        filter: blur(5px);
+    }
+    to{
+        transform: translate(-70px,-50px) scale(1);
+        opacity: 0.3;
+        filter: blur(7px);
+    }
+}
+
+@keyframes fumaça2{
+    from{
+        transform: translate(8px,-38px) scale(1);
+        opacity: .7;
+        filter: blur(5px);
+    }
+    to{
+        transform: translate(-60px,-60px) scale(1);
+        opacity: 0.3;
+        filter: blur(7px);
+    }
+}
+
+.fumaça:nth-child(1){
+    animation-delay: 0s;
+}
+.fumaça:nth-child(2){
+    animation-delay: 0.25s;
+}
+.fumaça:nth-child(3){
+    animation-delay: 0.5s;
+}
+.fumaça:nth-child(4){
+    animation-delay: 0.75s;
+}
+.fumaça:nth-child(5){
+    animation-delay: 01s;
+}
+.fumaça:nth-child(6){
+    animation-delay: 1.25s
+    
+}.fumaça:nth-child(7){
+    animation-delay: 1.5s
+}.fumaça:nth-child(8){
+    animation-delay: 1.75s
+}.fumaça:nth-child(9){
+    animation-delay: 2s
+}.fumaça:nth-child(10){
+    animation-delay: 2.25s
+}.fumaça:nth-child(11){
+    animation-delay: 2.5s
+}
