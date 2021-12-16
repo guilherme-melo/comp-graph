@@ -1,0 +1,1 @@
+A project made in canvas that attempts to ilustrate jpeg-compression algorithm in a comprehensible way.
